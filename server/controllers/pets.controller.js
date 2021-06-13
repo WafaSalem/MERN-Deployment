@@ -9,7 +9,7 @@ module.exports = {
       })
       .catch((err) => {
         console.log(err);
-        res.json(err);
+        res.status(400).json(err);
       });
   },
   getAll: (req, res) => {
